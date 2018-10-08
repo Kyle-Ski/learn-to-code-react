@@ -21,7 +21,7 @@ export default class App extends React.Component {
   render() {
     return (
       <main>
-        <CardList title="To Do" cards={CardData} />
+        <CardList title="To Do" cards={this.state.cards} />
         <AddCardForm addCard={this.addCard}/>
       </main>
     )
