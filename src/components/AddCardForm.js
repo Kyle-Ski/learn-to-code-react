@@ -1,4 +1,5 @@
 import React from 'react'
+import Card from './Card.js'
 
 export default class Component extends React.Component {
 
@@ -10,6 +11,7 @@ export default class Component extends React.Component {
   onSubmit(e) {
     e.preventDefault()
     console.log(this.refs.title.value)
+    // return <Card {this.refs.title.value} />
   }
 
   render() {

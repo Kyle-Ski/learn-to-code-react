@@ -6,12 +6,16 @@ import AddCardForm from './components/AddCardForm'
 
 export default class App extends React.Component {
 
+  addCard = (card) => {
+    console.log('Add Card')
+  }
+
   render() {
     return (
-     <main>
+      <main>
         <CardList title="To Do" cards={CardData} />
         <AddCardForm />
-     </main>
+      </main>
     )
   }
 
