@@ -15,7 +15,9 @@ export default class App extends React.Component {
 
   addCard = (card) => {
     console.log('card', card)
-    //eventually set state here
+    this.setState({
+      cards: this.state.cards.concat(card)
+    })
   }
 
   render() {
